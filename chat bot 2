@@ -1,0 +1,76 @@
+import win32com.client as wincl
+speak = wincl.Dispatch("SAPI.SpVoice")
+
+print("hello there,I am chatbot made by aayush")
+speak.speak("hello there, I am chatbot made by aayush")
+
+print("Tell me your Name")
+speak.speak("Tell me your Name")
+name=input()
+
+
+print("nice name"+" "+name)
+speak.speak("nice name"+" "+name)
+
+print("so how are you doing these days")
+speak.speak("so how are you doing these days")
+reply=input()
+print("ohh!! I'm Feeling the same.")
+speak.speak("ohh!! I'm Feeling the same.")
+
+print("tell me your Gender")
+speak.speak("tell me your Gender")
+reply=input()
+if(reply=="boy","male","i am a boy"):
+    print("I'm a boy Too!!")
+    speak.speak("I'm a boy Too!!")
+else:
+    print("ohh, I'm a boy")
+    speak.speak("I'm a boy")
+
+
+print("so Tell me More about you?")
+speak.speak("so Tell me More about you?")
+reply=input()
+print("ohh Nice to know")
+speak.speak("ohh Nice to know")
+
+print("Tell me your age, I will guess the year of birth")
+speak.speak("Tell me your age, I will guess the year of birth")
+reply=input()
+print("your birth year is="+" "+str(2019-int(reply)))
+speak.speak("your birth year is"+" "+str(2019-int(reply)))
+
+
+print("have you seen avengers?")
+speak.speak("have you seen avengers?")
+reply=input()
+if(reply=="no","nope","not now","nah"):
+    print("you should go and watch it")
+    speak.speak("you should go and watch it")
+else:
+    print("Nice, i have seen it too")
+    speak.speak("Nice, i have seen it too")    
+    
+print("Do you like Marvel? or Dc?")
+speak.speak("Do you like Marvel? or Dc?")
+reply=input()
+if(reply=="marvel","i like marvel","i am marvel fan"):
+    print("Here are some Marvel comic facts-1-Iron man's armour used to include roll roller skates.2-Stan Lee had plans of calling Spider Man 'Fly Man' or 'Insect Man’.3-Doctor Doom does not have a doctorate as he dropped out of college.")
+    speak.speak("Here are some Marvel comic facts-1-Iron man's armour used to include roll roller skates.2-Stan Lee had plans of calling Spider Man 'Fly Man' or 'Insect Man’.3-Doctor Doom does not have a doctorate as he dropped out of college.")
+else:
+    print("I like Marvel More")
+
+print("tell Me Do you like the conversation??")
+speak.speak("tell Me Do you like the conversation??")
+reply=input()
+if(reply=="yes"):
+    print("thanks")
+    speak.speak("thanks")
+else:
+    print("I'm so sorry to hear that :/"+" "+name)
+    speak.speak("I'm so sorry to hear that :/"+" "+ name)    
+    
+print("ok, its time to go now Bye, See you later")
+speak.speak("ok, its time to go now Bye, See you later")
+
